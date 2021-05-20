@@ -1,0 +1,45 @@
+{{ define "main" }}
+<header class="hero">
+    <div class="content">
+        <h1>{{ .Site.Title }}</h1>
+        <p class="slogan">{{ .Site.Params.tagline }}</p>
+        <p class="links">
+            <a href="mailto:{{ .Site.Params.email }}" target="_blank" class="cdn"><span data-feather="mail"></span></a>
+            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" class="github"><span data-feather="github"></span></a>
+            <a href="{{ .Site.Params.resume }}" target="_blank" class="github"><span data-feather="info"></span></a>
+            </p>
+            <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
+    </div>
+</header>
+<div id="bottom-content" class="flex visual">
+    <h2 class="centerText">Things I can do</h2>
+    <div class="flex one two-800">
+        <div>
+            <article class="card custom">
+                <header>
+                    <h2>Penetration Testing</h2>
+                </header>
+                <footer>
+                </footer>
+            </article>
+        </div>
+        <div>
+            <article class="card custom">
+                <header>
+                    <h2>Penetration Testing</h2>
+                </header>
+                <section>
+                    <p>Basic physical and digital security penetration testing</p>
+                </section>
+                <footer>
+                    <span data-feather="star"></span>
+                    <span data-feather="star"></span>
+                    <span data-feather="star"></span>
+                    <span data-feather="star"></span>
+                    <span data-feather="star"></span>
+                </footer>
+            </article>
+        </div>
+    </div>
+</div>
+{{ end }}

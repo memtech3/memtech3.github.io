@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Micah Guttman"
+theme = "nametagHakim"
+[params]
+    tagline = "Student, Developer, IT Professional, & Maker"
+    github = "memtech3"
+    email = "memtech3@gmail.com"
+    resume = "linkToResume"

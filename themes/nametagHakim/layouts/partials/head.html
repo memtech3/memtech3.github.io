@@ -1,0 +1,14 @@
+<head>
+    {{ $title := print .Site.Title " | " .Title }}
+    {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="css, library, picnic, picnicss, light">
+    <meta name="description" content="A lightweight CSS library">
+    <link rel="stylesheet" href="/css/picnic.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="icon" href="/img/basket.png" type="image/png">
+    <link rel="stylesheet" media="bogus">
+    <script src="/js/feather.min.js"></script>
+</head>
