@@ -14,15 +14,20 @@
 <div id="bottom-content" class="flex visual">
     <h2 class="centerText">Things I can do</h2>
     <div class="flex one two-800">
+        {{ range where .Site.Pages "Type" "skill"}}
         <div>
             <article class="card custom">
                 <header>
-                    <h2>Penetration Testing</h2>
+                    <h2>{{ .Title }}</h2>
                 </header>
+                <section>
+                    <p>{{ .Content }}</p>
+                </section>
                 <footer>
                 </footer>
             </article>
         </div>
+        {{ end }}
         <div>
             <article class="card custom">
                 <header>
