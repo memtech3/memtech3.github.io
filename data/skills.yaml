@@ -1,0 +1,7 @@
+- name: Test
+  logo: blank
+  summary: summary goes here
+
+- name: Test2
+  logo: blank
+  summary: summary goes here2
