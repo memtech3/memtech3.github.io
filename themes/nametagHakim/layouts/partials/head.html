@@ -7,7 +7,14 @@
     <meta name="keywords" content="css, library, picnic, picnicss, light">
     <meta name="description" content="A lightweight CSS library">
     <link rel="stylesheet" href="/css/picnic.min.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="/css/custom.css"> -->
+    {{ $sass := resources.Get "custom1.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+    <link rel="stylesheet" href="{{ $sass.Permalink }}">
     <link rel="icon" href="/img/basket.png" type="image/png">
     <link rel="stylesheet" media="bogus">
     <script src="/js/feather.min.js"></script>

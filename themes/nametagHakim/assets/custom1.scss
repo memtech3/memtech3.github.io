@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;    
     color: #333333;
     font-size: 17.6px;
     width: 100%;
@@ -13,25 +13,24 @@ body {
     background: black;
     background-size: cover;
     color:white;
-}
-.hero a {
-    color: white;
-}
-.hero a:hover {
-    color: #1074D9;
-}
-.hero .content {
-    position: relative;
-    transform: translateY(-40%);
-    top: 45%;
-}
-.hero .content .npm {
-    max-width: 200px;
-    text-align: center;
-    margin: 1.3em auto 0.3em;
-}
-.hero h1 {
-    padding: 0;
+    a {
+        color: white;
+    }
+    a:hover {
+        color: #1074D9;
+    }
+    .content {
+        position: relative;
+        transform: translateY(-40%);
+        top: 45%;
+    }
+    h1 {
+        padding: 0;
+    }
+    p {
+        font-size: 20px;
+        margin-top: 0;
+    }
 }
 h1 h2 h3 h4 {
     margin: 0;
@@ -50,9 +49,9 @@ h3 {
 .visual {
     text-align: left;
     width:100%;
-    max-width: 960px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 80px 0 0;
+    padding-top: 80px;
 }
 nav {
     color: white;
@@ -61,14 +60,4 @@ nav {
 .centerText {
     text-align: center;
     margin-right: auto;
-}
-.custom {
-    border: none;
-    background-color: rgb(250, 250, 250);
-}
-.custom header {
-    text-align: center;
-    border: none;
-}
-.custom .section p {
 }

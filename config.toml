@@ -1,9 +1,8 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Micah Guttman"
+title = "Micah"
 theme = "nametagHakim"
+assetDir = "/assets"
 [params]
     tagline = "Student, Developer, IT Professional, & Maker"
-    github = "memtech3"
-    email = "memtech3@gmail.com"
-    resume = "linkToResume"
+    name = "Micah Shaw Guttman"
