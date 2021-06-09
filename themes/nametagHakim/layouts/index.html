@@ -7,11 +7,14 @@
             {{ range $.Site.Data.landerLinks }}
             <a href="{{ .link }}" target="_blank" class="cdn"><span data-feather="{{ .icon }}"></span></a>
             {{ end }}
+            <br>
+            <a href = "" class="">Resume</a>
         </p>
         <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
     </div>
 </header>
 <div id="bottom-content" class="flex">
+    {{- partial "summary.html" . -}}
     {{- partial "skills.html" . -}}
 </div>
 {{ end }}
