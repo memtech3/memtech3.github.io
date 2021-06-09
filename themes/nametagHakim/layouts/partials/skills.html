@@ -1,17 +1,19 @@
-<h2 class="centerText">Skills</h2>
-<div class="flex one two-600 three-1200 skills">
-    {{ range $.Site.Data.skills}}
-    <div>
-        <article class="card">
-            <header>
-                <h3>{{ .name }}</h3>
-            </header>
-            <section>
-                <p>{{ .summary }}</p>
-            </section>
-            <footer>
-            </footer>
-        </article>
+<div class="skillsContainer">
+    <h2 class="centerText">Skills</h2>
+    <div class="flex one two-600 three-1200 skills">
+        {{ range $.Site.Data.skills}}
+        <div>
+            <article class="card">
+                <header>
+                    <h3>{{ .name }}</h3>
+                </header>
+                <section>
+                    <p>{{ .summary }}</p>
+                </section>
+                <footer>
+                </footer>
+            </article>
+        </div>
+        {{ end }}
     </div>
-    {{ end }}
 </div>
