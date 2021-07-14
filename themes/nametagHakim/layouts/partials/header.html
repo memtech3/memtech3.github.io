@@ -1,20 +1,55 @@
-<nav class="demo">
-        <a href="#" class="brand">
-            <img class="logo" src="/img/basket.png" />
-            <span>{{ .Site.Title }}</span>
+<nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="">
+           <p class="subtitle has-text-white"> {{.Site.Params.Name}} </p>
         </a>
 
-        <!-- responsive-->
-        <input id="bmenub" type="checkbox" class="show">
-        <label for="bmenub" class="burger pseudo button">menu</label>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
 
-        <div class="menu">
-            {{ range .Site.Menus.main }}
-            <a href="#" class="pseudo button icon-picture">
-                {{.Name | safeHTML }}
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Home
             </a>
-            {{ end }}
-            <a href="#" class="pseudo button icon-picture">Demo</a>
-            <a href="#" class="button icon-puzzle">Plugins</a>
+
+            <a class="navbar-item">
+                Documentation
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        About
+                    </a>
+                    <a class="navbar-item">
+                        Jobs
+                    </a>
+                    <a class="navbar-item">
+                        Contact
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item">
+                        Report an issue
+                    </a>
+                </div>
+            </div>
         </div>
-    </nav>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                    <a href="" class="button is-light">
+                        Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+</nav>

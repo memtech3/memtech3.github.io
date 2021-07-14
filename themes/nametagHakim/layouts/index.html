@@ -1,20 +1,22 @@
 {{ define "main" }}
-<header class="hero">
-    <div class="content">
-        <h1>{{ .Site.Params.name }}</h1>
-        <p class="slogan">{{ .Site.Params.tagline }}</p>
-        <p class="links">
-            {{ range $.Site.Data.landerLinks }}
-            <a href="{{ .link }}" target="_blank" class="cdn"><span data-feather="{{ .icon }}"></span></a>
-            {{ end }}
-            <br>
-            <a href = "" class="">Resume</a>
-        </p>
-        <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
+<section class="hero is-link is-fullheight-with-navbar has-background-black">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title">{{ .Site.Params.name }}</h1>
+            <p class="subtitle">{{ .Site.Params.tagline }}</p>
+            <p class="links">
+                {{ range $.Site.Data.landerLinks }}
+                <a href="{{ .link }}" target="_blank" class="cdn"><span data-feather="{{ .icon }}"></span></a>
+                {{ end }}
+                <br>
+                <a href = "" class="">Resume</a>
+            </p>
+            <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
+        </div>
     </div>
-</header>
-<div id="bottom-content" class="flex">
+</section>
+<section id="bottom-content" class="section">
     {{- partial "summary.html" . -}}
     {{- partial "skills.html" . -}}
-</div>
+</section>
 {{ end }}
