@@ -7,8 +7,6 @@
     <meta name="keywords" content="css, library, picnic, picnicss, light">
     <meta name="description" content="A lightweight CSS library">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    {{ $sass := resources.Get "custom1.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-    <link rel="stylesheet" href="{{ $sass.Permalink }}">
     <link rel="icon" href="/img/basket.png" type="image/png">
     <link rel="stylesheet" media="bogus">
     <script src="/js/feather.min.js"></script>
