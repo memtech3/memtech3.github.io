@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Micah"
 theme = "nametagHakim"
 assetDir = "/assets"
+publishDir = "docs"
 [params]
     tagline = "Student, Developer, IT Professional, & Maker"
     name = "Micah Shaw Guttman"
