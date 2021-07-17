@@ -7,3 +7,22 @@ publishDir = "docs"
 [params]
     tagline = "Student, Developer, IT Professional, & Maker"
     name = "Micah Shaw Guttman"
+
+[menu]
+    [[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "#bottom-content"
+    [[menu.main]]
+    identifier = "more"
+    name = "More"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"
+    [[menu.main]]
+    parent = "more"
+    name = "getting finished"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"
