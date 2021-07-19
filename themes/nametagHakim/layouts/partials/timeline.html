@@ -19,17 +19,22 @@
                 <p>Timeline content - Can include any HTML element</p>
             </div>
         </div>
+        {{ range $.Site.Data.timeline }}
+        {{ if .yearMarker }}
         <header class="timeline-header">
-            <span class="tag is-primary">2017</span>
+            <span class="tag is-primary">{{.year}}</span>
         </header>
-        <div class="timeline-item is-danger">
-            <div class="timeline-marker is-danger is-icon">
-                <i class="fa fa-flag"></i>
+        {{ else }}
+        <div class="timeline-item is-{{.color}}">
+            <div class="timeline-marker is-{{.color}}{{ if .icon }} is-icon{{end}}" style="font-size: 20px;">
+                <span data-feather="{{ .icon }}"></span>
             </div>
             <div class="timeline-content">
-                <p class="heading">March 2017</p>
+                <p class="heading">{{dateFormat "January 2006" .date}}</p>
                 <p>Timeline content - Can include any HTML element</p>
             </div>
         </div>
+        {{ end }}
+        {{ end }}
     </div>
 </section>
