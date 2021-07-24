@@ -26,8 +26,8 @@
         </header>
         {{ else }}
         <div class="timeline-item is-{{.color}}">
-            <div class="timeline-marker is-{{.color}}{{ if .icon }} is-icon{{end}}" style="font-size: 20px;">
-                <span data-feather="{{ .icon }}"></span>
+            <div class="timeline-marker is-{{.color}}{{ if .icon }} is-image is-32x32{{end}}">
+                <span class="{{ .icon }} is-size-5 has-text-centered"></span>
             </div>
             <div class="timeline-content">
                 <p class="heading">{{dateFormat "January 2006" .date}}</p>

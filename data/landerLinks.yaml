@@ -1,11 +1,14 @@
 - name: email
   link: mailto:memtech3@gmail.com
   icon: mail
+  newIcon: bi bi-envelope
   
 - name: github
   link: https://github.com/memtech3
   icon: github
+  newIcon: bi bi-github
 
 - name: linkedin
   link: https://www.linkedin.com/in/micah-guttman-a05930137/
   icon: linkedin
+  newIcon: bi bi-linkedin

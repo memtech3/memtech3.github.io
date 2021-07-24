@@ -11,6 +11,13 @@
                 <br>
                 <a href = "" class="">Resume</a>
             </p>
+            <p class="links">
+                {{ range $.Site.Data.landerLinks }}
+                <a href="{{ .link }}" target="_blank" class="cdn"><span class="{{.newIcon}} is-size-4 mx-1"></span></a>
+                {{ end }}
+                <br>
+                <a href="" class="">Resume</a>
+            </p>
             <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
         </div>
     </div>
