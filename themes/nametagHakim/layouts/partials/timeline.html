@@ -4,20 +4,6 @@
             <span class="tag is-medium is-primary">Present</span>
         </header>
         <div class="timeline-item is-primary">
-            <div class="timeline-marker is-primary"></div>
-            <div class="timeline-content">
-                <p class="heading">January 2016</p>
-                <p>Timeline content - Can include any HTML element</p>
-            </div>
-        </div>
-        <div class="timeline-item is-warning">
-            <div class="timeline-marker is-warning is-image is-32x32">
-                <img src="https://bulma.io/images/placeholders/32x32.png">
-            </div>
-            <div class="timeline-content">
-                <p class="heading">February 2016</p>
-                <p>Timeline content - Can include any HTML element</p>
-            </div>
         </div>
         {{ range $.Site.Data.timeline }}
         {{ if .yearMarker }}
@@ -26,12 +12,32 @@
         </header>
         {{ else }}
         <div class="timeline-item is-{{.color}}">
-            <div class="timeline-marker is-{{.color}}{{ if .icon }} is-image is-32x32{{end}}">
-                <span class="{{ .icon }} is-size-5 has-text-centered"></span>
-            </div>
+            <div class="timeline-marker is-{{.color}} is-image is-32x32"></div>
             <div class="timeline-content">
-                <p class="heading">{{dateFormat "January 2006" .date}}</p>
-                <p>Timeline content - Can include any HTML element</p>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">{{ .title }}</p>
+                                    <p class="subtitle is-6">{{ .organization }} <br> 
+                                        {{dateFormat "January 2006" .dateStart}} {{if .dateEnd}} - {{dateFormat "January 2006" .dateEnd}}{{end}}
+                                </div>
+                            </div>
+                            <div class="content">
+                                {{ .description }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        {{ .title }} <br>
+                        {{ .organization }}
+                        <p>{{ .description }}</p>
+                    </div> 
             </div>
         </div>
         {{ end }}

@@ -1,18 +1,27 @@
 - year: 2018
   yearMarker: true
-- name: IT Student Assistant at Energy Institute High School
+- name: Student IT Assistant at Energy Institute High School
+  title: Student IT Assistant
+  organization: Energy Insititute High School
   description: tes
-  date: 2018-08-01
+  dateStart: 2018-08-01
   color: warning
   icon: bi bi-archive
 - name: Test
+  title: Test Content
+  organziation: localhost
   description: tes
-  date: 2018-07-01
+  dateStart: 2018-07-01
 - year: 2017
   yearMarker: true
 - name: Test2
+  title: test 2
+  organization: yourhost
   description: tes
-  date: 2017-02-01
-- name: IT Student Assistant at Pin Oak Middle School
-  description: tes
-  date: 2017-01-01
+  dateStart: 2017-02-01
+- name: Student IT Assistant at Pin Oak Middle School
+  title: Student IT Assistant
+  organization: Pin Oak Middle School
+  description: As a student IT assistant, I augmented my school and school district's IT department with with basic IT support and labor
+  dateStart: 2017-01-01
+  dateEnd: 2018-08-01
