@@ -14,8 +14,8 @@
         <div class="timeline-item is-{{.color}}">
             <div class="timeline-marker is-{{.color}} is-image is-32x32"></div>
             <div class="timeline-content">
-                    <div class="card">
-                        <div class="card-content">
+                    <div class="card" style="width: 30em;">
+                        <div class="card-content ">
                             <div class="media">
                                 <div class="media-left">
                                     <figure class="image is-48x48">
@@ -33,11 +33,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container">
-                        {{ .title }} <br>
-                        {{ .organization }}
-                        <p>{{ .description }}</p>
-                    </div> 
             </div>
         </div>
         {{ end }}

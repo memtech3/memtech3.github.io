@@ -12,3 +12,8 @@
   link: https://www.linkedin.com/in/micah-guttman-a05930137/
   icon: linkedin
   newIcon: bi bi-linkedin
+
+- name: discord
+  link: https://discordapp.com/users/8285
+  icon: linkedin
+  newIcon: bi bi-discord
