@@ -9,15 +9,26 @@
                 <a href="{{ .link }}" target="_blank" class="cdn"><span class="{{.newIcon}} is-size-4 mx-1"></span></a>
                 {{ end }}
                 <br>
-                <a href="" class="">Resume</a>
+                {{ if .Site.Params.Resume.resume }}
+                <a href="{{.Site.Params.Resume.link}}" class="">Resume</a>
+                {{ end}}
             </p>
             <a href="#bottom-content"><span data-feather="chevron-down"></span></a>
         </div>
     </div>
 </section>
 <section id="bottom-content" class="section">
+    {{ if .Site.Params.Sections.summary }}
     {{- partial "summary.html" . -}}
+    {{ end }}
+    {{ if .Site.Params.Sections.timeline }}
     {{- partial "timeline.html" . -}}
+    {{end}}
+    {{ if .Site.Params.Sections.skills }}
     {{- partial "skills.html" . -}}
+    {{end}}
+    {{ if .Site.Params.Sections.moretocome }}
+    {{- partial "moretocome.html" . -}}
+    {{end}}
 </section>
 {{ end }}

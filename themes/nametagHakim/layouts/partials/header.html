@@ -36,11 +36,12 @@
             {{ end }}
 
         </div>
-
+        {{ if .Site.Params.Resume.resume}}
         <div class="navbar-end">
-            <a class="navbar-item">
+            <a class="navbar-item" href="{{.Site.Params.Resume.link}}">
                 Resume
             </a>
             </div>
+        {{ end }}
         </div>
 </nav>
