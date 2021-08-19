@@ -12,25 +12,25 @@ publishDir = "docs"
         resume = true
         link = "Resume 8-18-21.pdf"
     [params.sections]
-        summary = false
-        timeline = false
-        skills = false
+        summary = true
+        timeline = true
+        skills = true
         moretocome = true
 [menu]
-    # [[menu.main]]
-    # identifier = "about"
-    # name = "About Me"
-    # pre = "<i class='fa fa-heart'></i>"
-    # url = "#bottom-content"
-    # [[menu.main]]
-    # identifier = "more"
-    # name = "More"
-    # post = "<span class='alert'>New!</span>"
-    # pre = "<i class='fa fa-road'></i>"
-    # url = "/getting-started/"
-    # [[menu.main]]
-    # parent = "more"
-    # name = "getting finished"
-    # post = "<span class='alert'>New!</span>"
-    # pre = "<i class='fa fa-road'></i>"
-    # url = "/getting-started/"
+    [[menu.main]]
+    identifier = "about"
+    name = "About Me"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "#bottom-content"
+    [[menu.main]]
+    identifier = "more"
+    name = "More"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"
+    [[menu.main]]
+    parent = "more"
+    name = "getting finished"
+    post = "<span class='alert'>New!</span>"
+    pre = "<i class='fa fa-road'></i>"
+    url = "/getting-started/"
