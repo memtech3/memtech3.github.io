@@ -13,7 +13,12 @@
   icon: linkedin
   newIcon: bi bi-linkedin
 
-- name: discord
-  link: https://discordapp.com/users/8285
+- name: instagram
+  link: https://instagram.com/micahguttman
   icon: linkedin
-  newIcon: bi bi-discord
+  newIcon: bi bi-instagram
+
+- name: snapchat
+  link: https://snapchat.com/add/memtech3
+  icon: linkedin
+  newIcon: bi bi-snapchat
