@@ -1,19 +1,19 @@
 - name: email
   link: mailto:memtech3@gmail.com
-  icon: mail
-  newIcon: bi bi-envelope
+  icon: bi bi-envelope
+  class: is-primary
   
 - name: github
   link: https://github.com/memtech3
-  icon: github
-  newIcon: bi bi-github
+  icon: bi bi-github
+  class: is-link
 
 - name: linkedin
   link: https://www.linkedin.com/in/micah-guttman-a05930137/
-  icon: linkedin
-  newIcon: bi bi-linkedin
+  icon: bi bi-linkedin
+  class: is-info
 
 - name: discord
   link: https://discordapp.com/users/8285
-  icon: linkedin
-  newIcon: bi bi-discord
+  icon: bi bi-discord
+  class: is-warning
