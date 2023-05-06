@@ -1,12 +1,9 @@
 // adapted from https://bbbootstrap.com/snippets/rounded-circle-social-media-icons-animation-54757691
 .socialIcons {
-    @media (max-width:700px) {
-        display: block;
-    }
-
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     a {
         margin: 10px;
