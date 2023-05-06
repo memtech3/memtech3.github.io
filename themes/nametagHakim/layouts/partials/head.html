@@ -10,5 +10,5 @@
     {{ $options := (dict "includePaths" (slice "node_modules") "outputStyle" "compressed") }}
     {{ $scss := resources.Get "/sass/main.scss" | resources.ToCSS $options | fingerprint }}
     <link rel="stylesheet" href="{{ $scss.Permalink }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
