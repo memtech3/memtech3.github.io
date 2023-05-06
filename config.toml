@@ -5,9 +5,9 @@ theme = "nametagHakim"
 assetDir = "/assets"
 publishDir = "docs"
 [params]
-    tagline = "Student, Developer, IT Professional, & Maker"
+    tagline = "Maker, Roboticist, IT Professional, Programmer"
     name = "Micah Guttman"
-    keywords = "Micah Guttman, Micah Shaw, Micah Guttman, memtech3, "
+    keywords = ""
     [params.resume]
         resume = false
         link = "Resume 8-18-21.pdf"
