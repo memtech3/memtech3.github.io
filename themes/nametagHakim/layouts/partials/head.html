@@ -8,7 +8,22 @@
     <meta name="description" content="{{.Site.Params.tagline}}">
     <!-- Include node_modules directory so npm installed SASS can be compiled -->
     {{ $options := (dict "includePaths" (slice "node_modules") "outputStyle" "compressed") }}
-    {{ $scss := resources.Get "/sass/main.scss" | resources.ToCSS $options | fingerprint }}
-    <link rel="stylesheet" href="{{ $scss.Permalink }}">
+    {{ $rawcss := resources.Get "/sass/main.scss" | resources.ToCSS $options | fingerprint }}
+   
+    {{ $css := $rawcss | resources.PostCSS }} 
+    {{ if .Site.Params.purgeCSS }} 
+        {{ $css = $css | minify | fingerprint | resources.PostProcess }} 
+    {{ end }}
+
+<link
+  rel="stylesheet"
+  href="{{ $css.RelPermalink }}"
+  {{ if hugo.IsProduction -}} 
+    integrity="{{ $css.Data.Integrity }}"
+  {{- end }}
+/>
+
+    <link rel="stylesheet" href="{{ $rawcss.Permalink }}">
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
