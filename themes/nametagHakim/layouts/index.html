@@ -1,5 +1,11 @@
 {{ define "main" }}
-<section class="hero is-link is-fullheight-with-navbar has-background-black">
+{{$heroClass:=""}}
+{{ if .Site.Params.Sections.navbar }}
+    {{$heroClass = "is-fullheight-with-navbar"}}
+{{ else }}
+    {{$heroClass = "is-fullheight"}}
+{{ end }}
+<section class="hero is-black {{$heroClass}}">
     <div class="hero-body">
         <div class="container has-text-centered">
             <h1 class="title">{{ .Site.Params.name }}</h1>
@@ -16,10 +22,14 @@
                 <a href="{{.Site.Params.Resume.link}}" class="">Resume</a>
                 {{ end}}
             </p>
+            {{ if .Site.Params.Resume.downChevron }}
             <a href="#bottom-content"><span class="bi-chevron-down" ></span></a>
+            {{ end}}
         </div>
     </div>
 </section>
+
+{{ if .Site.Params.Sections.bottomContent }}
 <section id="bottom-content" class="section">
     {{ if .Site.Params.Sections.summary }}
     {{- partial "summary.html" . -}}
@@ -34,4 +44,5 @@
     {{- partial "moretocome.html" . -}}
     {{end}}
 </section>
+{{ end }}
 {{ end }}

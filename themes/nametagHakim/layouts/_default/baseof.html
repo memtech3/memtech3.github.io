@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html class="{{ if .Site.Params.Sections.navbar }}has-navbar-fixed-top{{ end }}">
     {{- partial "head.html" . -}}
     <body>
+        {{ if .Site.Params.Sections.navbar }}
         {{- partial "header.html" . -}}
+        {{ end }}
         {{- block "main" . }}{{- end }}
+        {{ if .Site.Params.Sections.navbar }}
         {{- partial "footer.html" . -}}
+        {{ end }}
     </body>
 </html>
