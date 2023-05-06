@@ -1,13 +1,13 @@
-baseURL = "http://example.org/"
+baseURL = "https://micahguttman.com"
 languageCode = "en-us"
-title = "Micah"
+title = "Micah Guttman"
 theme = "nametagHakim"
 assetDir = "/assets"
 publishDir = "docs"
 [params]
     tagline = "Student, Developer, IT Professional, & Maker"
-    name = "Micah Shaw Guttman"
-    keywords = "Micah Guttman, Micah Shaw, Micah Shaw Guttman, memtech3, "
+    name = "Micah Guttman"
+    keywords = "Micah Guttman, Micah Shaw, Micah Guttman, memtech3, "
     [params.resume]
         resume = true
         link = "Resume 8-18-21.pdf"
