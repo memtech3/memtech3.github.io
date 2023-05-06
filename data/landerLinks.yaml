@@ -13,7 +13,12 @@
   icon: bi bi-linkedin
   class: is-info
 
-- name: discord
-  link: https://discordapp.com/users/8285
-  icon: bi bi-discord
+- name: instagram
+  link: https://instagram.com/micahguttman
+  icon: bi bi-instagram
+  class: is-danger
+
+- name: snapchat
+  link: snap://memtech3
+  icon: bi bi-snapchat
   class: is-warning
