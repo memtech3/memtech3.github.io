@@ -50,64 +50,65 @@
             transition: all 0.3s linear;
             background-color: $info;
         }
-    }
 
-    @mixin is-color($color, $hoverColor: $white) {
-        border: 2px solid $color;
-        color: $color;
-
-        i {
+        @mixin is-color($color, $hoverColor: $white) {
+            border: 2px solid $color;
             color: $color;
-        }
 
-        &:hover {
             i {
-                color: $hoverColor;
+                color: $color;
+            }
+
+            &:hover {
+                i {
+                    color: $hoverColor;
+                }
+            }
+
+            &::after {
+                background-color: $color;
             }
         }
 
-        &::after {
-            background-color: $color;
+        &.is-white {
+            @include is-color($white, $black);
+        }
+
+        &.is-black {
+            @include is-color($black);
+        }
+
+        &.is-light {
+            @include is-color($light, $black);
+        }
+
+        &.is-dark {
+            @include is-color($dark);
+        }
+
+        &.is-primary {
+            @include is-color($primary);
+        }
+
+        &.is-link {
+            @include is-color($link);
+        }
+
+        &.is-info {
+            @include is-color($info);
+        }
+
+        &.is-success {
+            @include is-color($success);
+        }
+
+        &.is-warning {
+            @include is-color($warning, $black);
+        }
+
+        &.is-danger {
+            @include is-color($danger);
         }
     }
 
-    &.is-white {
-        @include is-color($white, $black);
-    }
-
-    &.is-black {
-        @include is-color($black);
-    }
-
-    &.is-light {
-        @include is-color($light, $black);
-    }
-
-    &.is-dark {
-        @include is-color($dark);
-    }
-
-    &.is-primary {
-        @include is-color($primary);
-    }
-
-    &.is-link {
-        @include is-color($link);
-    }
-
-    &.is-info {
-        @include is-color($info);
-    }
-
-    &.is-success {
-        @include is-color($success);
-    }
-
-    &.is-warning {
-        @include is-color($warning, $black);
-    }
-
-    &.is-danger {
-        @include is-color($danger);
-    }
 }
