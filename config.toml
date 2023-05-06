@@ -9,13 +9,17 @@ publishDir = "docs"
     name = "Micah Guttman"
     keywords = "Micah Guttman, Micah Shaw, Micah Guttman, memtech3, "
     [params.resume]
-        resume = true
+        resume = false
         link = "Resume 8-18-21.pdf"
     [params.sections]
-        summary = true
-        timeline = true
-        skills = true
-        moretocome = true
+        navbar = false
+        downChevron = false
+        bottomContent = false
+        summary = false
+        timeline = false
+        skills = false
+        moretocome = false
+        footer = false
 [menu]
     [[menu.main]]
     identifier = "about"
