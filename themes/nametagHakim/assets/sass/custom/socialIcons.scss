@@ -1,0 +1,113 @@
+// adapted from https://bbbootstrap.com/snippets/rounded-circle-social-media-icons-animation-54757691
+.socialIcons {
+    @media (max-width:700px) {
+        display: block;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 10px;
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid $info;
+
+        i {
+            font-size: 2em;
+            transition: all 0.3s linear;
+            z-index: 1;
+            color: $info;
+
+        }
+
+        &:hover {
+            i {
+                font-size: 1.5em;
+                color: $white;
+            }
+
+            &::after {
+                transform: scale(0.75);
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: inherit;
+            width: inherit;
+            border-radius: 50%;
+            opacity: 0;
+            z-index: 0;
+            transition: all 0.3s linear;
+            background-color: $info;
+        }
+    }
+
+    @mixin is-color($color, $hoverColor: $white) {
+        border: 2px solid $color;
+        color: $color;
+
+        i {
+            color: $color;
+        }
+
+        &:hover {
+            i {
+                color: $hoverColor;
+            }
+        }
+
+        &::after {
+            background-color: $color;
+        }
+    }
+
+    &.is-white {
+        @include is-color($white, $black);
+    }
+
+    &.is-black {
+        @include is-color($black);
+    }
+
+    &.is-light {
+        @include is-color($light, $black);
+    }
+
+    &.is-dark {
+        @include is-color($dark);
+    }
+
+    &.is-primary {
+        @include is-color($primary);
+    }
+
+    &.is-link {
+        @include is-color($link);
+    }
+
+    &.is-info {
+        @include is-color($info);
+    }
+
+    &.is-success {
+        @include is-color($success);
+    }
+
+    &.is-warning {
+        @include is-color($warning, $black);
+    }
+
+    &.is-danger {
+        @include is-color($danger);
+    }
+}

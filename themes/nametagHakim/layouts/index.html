@@ -7,8 +7,8 @@
             <p class="links">
                 <ul class="socialIcons">
                     {{ range $.Site.Data.landerLinks }}
-                        <a href="{{.link}}" target="_blank">
-                            <i class="{{.newIcon}}" style="font-size: 2em;"></i>
+                        <a class = "{{.class}}" href="{{.link}}" target="_blank">
+                            <i class="{{.icon}}"></i>
                         </a>                            
                     {{ end }}
                 </ul>
