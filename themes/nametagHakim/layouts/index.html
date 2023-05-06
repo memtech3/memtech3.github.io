@@ -5,10 +5,13 @@
             <h1 class="title">{{ .Site.Params.name }}</h1>
             <p class="subtitle">{{ .Site.Params.tagline }}</p>
             <p class="links">
-                {{ range $.Site.Data.landerLinks }}
-                <a href="{{ .link }}" target="_blank" class="cdn"><span class="{{.newIcon}} is-size-4 mx-1"></span></a>
-                {{ end }}
-                <br>
+                <ul class="socialIcons">
+                    {{ range $.Site.Data.landerLinks }}
+                        <a href="{{.link}}" target="_blank">
+                            <i class="{{.newIcon}}" style="font-size: 2em;"></i>
+                        </a>                            
+                    {{ end }}
+                </ul>
                 {{ if .Site.Params.Resume.resume }}
                 <a href="{{.Site.Params.Resume.link}}" class="">Resume</a>
                 {{ end}}
