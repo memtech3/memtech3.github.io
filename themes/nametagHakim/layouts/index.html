@@ -11,13 +11,13 @@
             <h1 class="title">{{ .Site.Params.name }}</h1>
             <p class="subtitle">{{ .Site.Params.tagline }}</p>
             <p class="links">
-                <ul class="socialIcons">
+                <span class="socialIcons">
                     {{ range $.Site.Data.landerLinks }}
-                        <a class = "{{.class}}" href="{{.link}}" target="_blank">
-                            <i class="{{.icon}}"></i>
+                        <a aria-label="{{.name}}" class = "{{.class}}" href="{{.link}}" target="_blank">
+                            <span class="{{.icon}}"></span>
                         </a>                            
                     {{ end }}
-                </ul>
+                    </span>
                 {{ if .Site.Params.Resume.resume }}
                 <a href="{{.Site.Params.Resume.link}}" class="">Resume</a>
                 {{ end}}

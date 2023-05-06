@@ -16,7 +16,7 @@
         cursor: pointer;
         border: 2px solid $info;
 
-        i {
+        span {
             font-size: 2em;
             transition: all 0.3s linear;
             z-index: 1;
@@ -25,7 +25,7 @@
         }
 
         &:hover {
-            i {
+            span {
                 font-size: 1.5em;
                 color: $white;
             }
@@ -52,12 +52,12 @@
             border: 2px solid $color;
             color: $color;
 
-            i {
+            span {
                 color: $color;
             }
 
             &:hover {
-                i {
+                span {
                     color: $hoverColor;
                 }
             }
