@@ -11,5 +11,10 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "bulma-timeline": "^3.0.5"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0"
   }
 }

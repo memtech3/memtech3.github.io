@@ -4,7 +4,10 @@ title = "Micah Guttman"
 theme = "nametagHakim"
 assetDir = "/assets"
 publishDir = "docs"
+[build]
+    writeStats = true
 [params]
+    purgeCSS = true
     tagline = "Maker, Roboticist, IT Professional, Programmer"
     name = "Micah Guttman"
     keywords = ""
