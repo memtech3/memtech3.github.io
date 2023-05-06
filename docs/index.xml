@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Micah Guttman</title>
-    <link>https://micahguttman.com/</link>
+    <link>https://micah.icu/</link>
     <description>Recent content on Micah Guttman</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://micahguttman.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://micah.icu/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
