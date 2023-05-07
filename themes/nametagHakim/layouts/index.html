@@ -13,7 +13,7 @@
             <p class="links">
                 <span class="socialIcons">
                     {{ range $.Site.Data.landerLinks }}
-                        <a aria-label="{{.name}}" class = "{{.class}}" href="{{.link}}" target="_blank">
+                        <a aria-label="{{.name}}" class = "{{.class}}" href="{{.link | safeURL}}" target="_blank">
                             <span class="{{.icon}}"></span>
                         </a>                            
                     {{ end }}
