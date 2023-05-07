@@ -8,8 +8,17 @@
 <section class="hero is-black {{$heroClass}}">
     <div class="hero-body">
         <div class="container has-text-centered">
+            <figure class="image mx-auto" style="width: 200px; height: 200px;">
+                {{ $image := resources.Get "/images/headshot.jpg" }}
+                <img class="is-rounded" src="{{ $image.RelPermalink }}">
+            </figure>
+            <br>
             <h1 class="title">{{ .Site.Params.name }}</h1>
-            <p class="subtitle">{{ .Site.Params.tagline }}</p>
+            <p class="subtitle is-size-5">
+                {{ .Site.Params.tagline1 }} 
+                <br>
+                {{ .Site.Params.tagline2 }}
+            </p>
             <p class="links">
                 <span class="socialIcons">
                     {{ range $.Site.Data.landerLinks }}

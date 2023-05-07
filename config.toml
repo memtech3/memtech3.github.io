@@ -2,11 +2,13 @@ baseURL = "https://micah.icu"
 languageCode = "en-us"
 title = "Micah Guttman"
 theme = "nametagHakim"
-assetDir = "/assets"
+assetDir = "assets"
 publishDir = "docs"
 [params]
-    tagline = "Maker, Roboticist, IT Professional, Programmer"
+    tagline1 = "Maker, Roboticist, Programmer"
+    tagline2 = "Engineering Student at Texas A&M"
     name = "Micah Guttman"
+    headshot = "headshot.jpg"
     keywords = ""
     [params.resume]
         resume = false
