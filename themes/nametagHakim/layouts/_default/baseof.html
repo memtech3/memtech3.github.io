@@ -9,5 +9,7 @@
         {{ if .Site.Params.Sections.footer }}
         {{- partial "footer.html" . -}}
         {{ end }}
+        {{ $js := resources.Get "js/site.js" }}
+        <script src="{{ $js.RelPermalink }}"></script>
     </body>
 </html>
