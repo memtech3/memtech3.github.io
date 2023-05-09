@@ -1,3 +1,22 @@
 body {
     background: $black;
+    color: white;
+}
+
+// Additional image size helper classes
+$additionalDimensions: 200, 256, 300, 500, 512;
+
+.image {
+    @each $dimension in $additionalDimensions {
+        &.is-#{$dimension}x#{$dimension} {
+            height: $dimension * 1px;
+            width: $dimension * 1px;
+        }
+    }
+
+    img {
+        &.has-rounded-corners {
+            border-radius: $radius-large;
+        }
+    }
 }
